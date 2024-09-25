@@ -63,33 +63,36 @@ const Terminal = () => {
   };
 
   return (
-    <div className="terminal">
-      <div className="terminal-header">
-        <div className="buttons">
-          <span className="button close"></span>
-          <span className="button minimize"></span>
-          <span className="button maximize"></span>
-        </div>
-      </div>
-      <div className="terminal-body" id="terminal-body">
-        {cmdHistory.map((cmd, index) => (
-          <div key={index} className="line">
-            <span className="command">{cmd}</span>
+    <div className="relative">
+      <div className="terminal container mx-auto w-full sm:w-[80%] lg:w-[115%] max-w-none lg:-ml-12 lg:-mr-12">
+
+        <div className="terminal-header">
+          <div className="buttons">
+            <span className="button close"></span>
+            <span className="button minimize"></span>
+            <span className="button maximize"></span>
           </div>
-        ))}
-        <div className="line">
-          <span className="prompt">{prompt}</span>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              className="input"
-              value={inputVal}
-              onChange={(e) => setInputVal(e.target.value)}
-              ref={inputRef}
-              autoFocus
-              style={{ paddingLeft: "10px" }}
-            />
-          </form>
+        </div>
+        <div className="terminal-body" id="terminal-body">
+          {cmdHistory.map((cmd, index) => (
+            <div key={index} className="line">
+              <span className="command">{cmd}</span>
+            </div>
+          ))}
+          <div className="line">
+            <span className="prompt">{prompt}</span>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                className="input"
+                value={inputVal}
+                onChange={(e) => setInputVal(e.target.value)}
+                ref={inputRef}
+                autoFocus
+                style={{ paddingLeft: "10px" }}
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
