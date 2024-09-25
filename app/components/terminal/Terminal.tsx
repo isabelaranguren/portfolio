@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { commands } from "./commands";
-import "./Terminal.css";
+import "./terminal.css";
 
 const Terminal = () => {
   const [inputVal, setInputVal] = useState("");
@@ -9,26 +9,7 @@ const Terminal = () => {
   const [domain, setDomain] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   // Define your ASCII art banner
-  const banner = `
-  
-╔════════════════════════════════════════════════════════════════════════════════╗
-║                                 About Me    ʕ·͡ᴥ·ʔ                              ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Location:         Houston, TX                                                  ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Interests:        Design, concerts, cooking, anime                             ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Education:        B.Sc. Applied Technology - Brigham Young University-Idaho    ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Skills:           Python, React, Tailwind, JavaScript, PHP, Flask, Git         ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Professional:     Software Engineer at Tech Innovations                        ║                                        ║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║ Goals:           Aspiring to lead a development team and work on innovative    ║
-║                  tech solutions that make a difference.                        ║
-╚════════════════════════════════════════════════════════════════════════════════╝
-  
-  `;
+  const banner = `Hi! ʕ·͡ᴥ·ʔ `;
   useEffect(() => {
     const initialMessage = `Type 'help' to see a list of available commands.`;
     setDomain(window.location.hostname);
