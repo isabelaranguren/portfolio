@@ -1,21 +1,33 @@
 import { BlogPosts } from 'app/components/posts'
+import Terminal from './components/terminal/Terminal'
+import Resume from './components/resume';
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+        &gt; Isabel Aranguren
+        <span className="blinking-cursor"> | </span>
       </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+      <p className="mb-8">
+        {`I'm aim to make technology accessible to everyone—because why should tech be scary? I’m here to make coding fun, one bug fix at a time!`}
       </p>
+      <div className="mb-6">
+        <Terminal />
+      </div>
+      <h2 className="mb-8 text-xl font-semibold tracking-tighter">
+        My Experience
+      </h2>
+      <div className="mb-8">
+        <Resume />
+      </div>
+      <h2 className="mb-8 text-xl font-semibold tracking-tighter">
+        My Projects
+      </h2>
+
       <div className="my-8">
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }

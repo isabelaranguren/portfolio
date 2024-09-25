@@ -1,0 +1,31 @@
+.about-container {
+  width: 80%; /* Adjust as needed */
+  border: 2px solid #000; /* Outer border */
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: monospace; /* Use a monospace font for ASCII style */
+}
+
+.about-header {
+  background-color: #f0f0f0; /* Light background for the header */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #000; /* Separator line */
+}
+
+.about-content {
+  padding: 10px;
+  max-height: 400px; /* Set a max height */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.about-row {
+  display: flex; /* Flexbox for rows */
+  justify-content: space-between; /* Space between labels and values */
+  padding: 5px 0; /* Vertical padding */
+  border-bottom: 1px solid #000; /* Separator line for each row */
+}
+
+.about-row:last-child {
+  border-bottom: none; /* Remove border from the last row */
+}
