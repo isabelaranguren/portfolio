@@ -72,7 +72,6 @@ html {
 
 .prose .anchor {
   @apply absolute invisible no-underline;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -189,7 +188,6 @@ table {
 .blinking-cursor {
   display: inline-block;
   width: 15px;
-  background-color: white; 
   animation: blink 1s infinite; 
 }
 
