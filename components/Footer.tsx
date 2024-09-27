@@ -1,3 +1,4 @@
+
 function ArrowIcon() {
   return (
     <svg
@@ -46,5 +47,5 @@ export default function Footer() {
         © {new Date().getFullYear()} MIT Licensed
       </p>
     </footer>
-  )
+  );
 }

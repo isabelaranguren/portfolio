@@ -1,7 +1,9 @@
-import { BlogPosts } from 'app/components/posts'
-import Terminal from './components/terminal/Terminal'
-import Resume from './components/resume';
+import { BlogPosts } from '@/components/Posts'
+import Terminal from '../components/terminal/Terminal'
+import Resume from '../components/resume';
 import Project from './projects/Project';
+import Footer from '../components/Footer';
+import { Navbar } from '../components/Nav';
 
 export default function Page() {
   return (

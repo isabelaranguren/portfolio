@@ -1,6 +1,6 @@
 // app/components/AboutInfo.tsx
 import React from "react";
-import { About } from "../data/user"; // Adjust the import path
+import { About } from "../app/data/user"; // Adjust the import path
 
 const AboutInfo: React.FC = () => {
   return (
