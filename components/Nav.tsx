@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { DarkModeToggle } from './DarkModeToggle';
 
 const navItems = {
   '/': {
@@ -27,11 +28,12 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
+          <DarkModeToggle />
         </nav>
       </div>
     </aside>
-  )
+  );
 }

@@ -1,11 +1,12 @@
 import { BlogPosts } from '@/components/Posts'
-import Terminal from '../components/terminal/Terminal'
+import Project from '@/components/projects/Project';
+import Terminal from '@/components/terminal/Terminal';
 import Timeline from '@/components/Timeline';
-import Project from './projects/Project';
+
 
 export default function Page() {
   return (
-    <section>
+    <>
       <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
         &gt; Hey I'm Isabel.
         <span className="blinking-cursor"> | </span>
@@ -25,6 +26,6 @@ export default function Page() {
         <h2 className="text-xl font-semibold tracking-tighter">My Projects</h2>
         <Project />
       </div>
-    </section>
+    </>
   );
 }

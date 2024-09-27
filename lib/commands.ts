@@ -1,4 +1,4 @@
-import About from "@/components/about/about";
+import { About } from "@/app/data/user";
 
 export interface Command {
   cmd: string;
