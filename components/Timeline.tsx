@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Resume = () => {
+const Timeline = () => {
   return (
     <div>
       <div className="group relative flex gap-x-5">
@@ -111,4 +111,4 @@ const Resume = () => {
   );
 }
 
-export default Resume;
+export default Timeline;

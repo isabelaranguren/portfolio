@@ -1,5 +1,4 @@
-// app/commands/commands.ts
-import { About } from "app/data/user";
+import About from "@/components/about/about";
 
 export interface Command {
   cmd: string;

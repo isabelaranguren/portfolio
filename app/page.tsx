@@ -1,9 +1,7 @@
 import { BlogPosts } from '@/components/Posts'
 import Terminal from '../components/terminal/Terminal'
-import Resume from '../components/resume';
+import Timeline from '@/components/Timeline';
 import Project from './projects/Project';
-import Footer from '../components/Footer';
-import { Navbar } from '../components/Nav';
 
 export default function Page() {
   return (
@@ -23,7 +21,7 @@ export default function Page() {
         <h2 className="text-xl font-semibold tracking-tighter">
           My Experience
         </h2>
-        <Resume />
+        <Timeline />
         <h2 className="text-xl font-semibold tracking-tighter">My Projects</h2>
         <Project />
       </div>

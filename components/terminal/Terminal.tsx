@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { commands } from "./commands";
+import { commands } from "@/lib/commands";
 import "./terminal.css";
 
 const Terminal = () => {
